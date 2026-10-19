@@ -18,7 +18,11 @@ in `study/` has a matching stage in every project.
 ```
 Machine-Learning/
 ├── README.md
-├── study/                                  # learning: one folder per book chapter
+├── study/                                  # learning: notes (.md) and coding practice
+│   ├── README.md
+│   ├── ml-fundamentals/                    # core ML concepts (Ace the Data Science Interview)
+│   │   ├── Machine-Learning-Key-Concepts.md
+│   │   └── practice/                       # coding exercises
 │   ├── 01-overview-of-ml-systems/
 │   ├── 02-ml-systems-design/
 │   ├── 03-data-engineering-fundamentals/
@@ -40,8 +44,22 @@ Machine-Learning/
 
 ## Study
 
-`study/` holds my notes on the book, plus outside reading (papers, blog posts, courses)
-filed under the chapter it relates to.
+`study/` holds my notes and coding practice. See [`study/README.md`](study/README.md).
+
+### ML fundamentals
+
+Core ML concepts (algorithms, model evaluation, the math) that the systems book assumes
+you already know:
+
+- [**Machine Learning Key Concepts**](study/ml-fundamentals/Machine-Learning-Key-Concepts.md):
+  key concepts from the Machine Learning chapter of *Ace the Data Science Interview*, with
+  self-check questions and a progress checklist.
+- [`practice/`](study/ml-fundamentals/practice/): coding exercises for those concepts.
+
+### Designing Machine Learning Systems
+
+Notes on the book, plus outside reading (papers, blog posts, courses) filed under the
+chapter it relates to.
 
 | # | Chapter | Focus | Folder |
 |---|---------|-------|--------|
@@ -74,9 +92,10 @@ How I take notes:
 
 ### Progress
 
-| Chapter | Status |
+| Topic | Status |
 |---------|--------|
-| 1–11 | Not started |
+| ML fundamentals (Ace the Data Science Interview) | Key concepts written; practice not started |
+| DMLS chapters 1–11 | Not started |
 
 ---
 
@@ -156,5 +175,6 @@ Use this checklist in each project's `PROGRESS.md`:
 
 ## Reference
 
-Chip Huyen, *Designing Machine Learning Systems: An Iterative Process for
-Production-Ready Applications*, O'Reilly Media, 2022.
+- Nick Singh & Kevin Huo, *Ace the Data Science Interview*, 2021.
+- Chip Huyen, *Designing Machine Learning Systems: An Iterative Process for
+  Production-Ready Applications*, O'Reilly Media, 2022.
